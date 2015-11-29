@@ -7,7 +7,7 @@ class Room
   end
 
   def pretty_string
-      "'#{@number}' is a #{@type} room"
+      "'#{@number}', a #{@type} room"
     end
 
 end
