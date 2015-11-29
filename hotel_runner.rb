@@ -6,13 +6,20 @@ require_relative 'rooms'
 
 hotel = Hotel.new 'B&B'
 
- # TODO: create rooms
+ # create rooms
  room_1 = Room.new(number: 1, type: 'Single')
  hotel.add_room(room_1)
- # TODO: list rooms
+
+ # list rooms
  puts "All rooms: #{hotel.list_rooms}"
- # TODO: create guests
- # TODO: list guests
+
+ # create guests
+ guest_1 = Guest.new("Jane")
+ hotel.add_guest(guest_1)
+
+ # list guests
+ puts "All guests: #{hotel.list_guests}"
+
  # TODO: check in rooms
  # TODO: check out rooms
  # TODO: list occupied/vacant rooms
